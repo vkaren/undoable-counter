@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>undoable counter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Undoable counter</h1>
+      <div>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+      </div>
+      <div class="box-counter">
+        <div>
+          <button class="dec">-100</button>
+          <button class="dec">-10</button>
+          <button class="dec">-1</button>
+        </div>
+        <p id="counter">0</p>
+        <div>
+          <button class="inc">+1</button>
+          <button class="inc">+10</button>
+          <button class="inc">+100</button>
+        </div>
+      </div>
+      <div class="history">
+        <h1>History</h1>
+        <div id="box-history"></div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
